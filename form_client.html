@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style/style_client.css">
+    <title>Оставить отзыв</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="right-side">
+          <div class="topic-text">Оставьте нам отзыв</div>
+          <form action="#" method="GET" class="form" id="add-form">
+            <div class="input-box">
+              <input type="text" placeholder="Ваше имя" id="name" required/>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Ваш адрес электронной почты" id="email" required/>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Введите заголовок" id="title" required/>
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Текст..." id="text" required></textarea>
+            </div>
+            <div class="button">
+              <a href="index.html"><input type="button" value="Назад"></a>
+            </div>
+            <button type="submit" class="button" id="form_btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

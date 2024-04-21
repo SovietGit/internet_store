@@ -1,0 +1,414 @@
+/*Fonts*/
+
+@font-face {
+    font-family: "Raleway Black";
+    src: url(../fonts/Raleway-Black.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Black Italic";
+    src: url(../fonts/Raleway-Black-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Bold";
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Bold Italic";
+    src: url(../fonts/Raleway-Bold-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Extra Bold";
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Regular";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Black";
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Black Italic";
+    src: url(../fonts/Roboto-Black-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+.body_main {
+    display: flex;
+    flex-direction: column;
+}
+
+.product_unit img {
+    height: 235px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/*Header*/
+
+.header_main {
+    min-height: 700px;
+    flex-shrink: 0;
+    background: url(../images/games.jpg);
+    background-size: cover;
+}
+
+.main_wrap {
+    width: 1170px;
+    min-height: inherit;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main_wrap::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    height: 141px;
+    width: 200px;
+    left: 37px;
+    
+    background: url(../images/logo.png) no-repeat;
+    background-size: 200px 200px;
+}
+
+.social_icons {
+    position: absolute;
+    top: 50px;
+    right: 140px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_icons a {
+    text-decoration: none;
+}
+
+.social_icons i {
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.social_icons i:hover {
+    color: #333333;
+    transition: 0.5s;
+}
+
+.last {
+    margin-right: 50px;
+}
+
+/*.first {
+    margin-right: 80px;
+}
+
+.social_icons span {
+    position: absolute;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 4px;
+}*/
+
+/*Main*/
+
+.content_main {
+    flex-shrink: 1;
+    background-color: #ebebeb;
+}
+
+.menu_wrap, .menu_wrap .dropdown_main {
+    background-color: #26d2fc;
+    margin-top: -20px;
+}
+
+/*Left*/
+
+.content_left {
+    width: 270px;
+    float: left;
+}
+
+.menu_wrap_text {
+    padding-left: 40px;
+    font-family: "Roboto Black", sans-serif;
+    font-size: 14px;
+    line-height: 66px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-image: linear-gradient(90deg, #FFC72C, #E45826);
+}
+
+.root_main {
+    background-color: #ffffff;
+}
+
+.root_main a {
+    display: block;
+    padding-left: 40px;
+    text-decoration: none;
+    color: #333333;
+    font-family: "Roboto Black", sans-serif;
+    font-size: 14px;
+    line-height: 43px;
+    text-transform: uppercase;
+}
+
+.root_main a:hover {
+    color: #e24602;
+    transition: 0.3s;
+}
+
+.menu_main {
+    list-style-type: none;
+    float: right;
+    margin-right: 15px;
+    padding: 0;
+    height: 30px;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url(../images/shop.jpg);
+    }
+    10%, 20% {
+        background-image: url(../images/shop_2.jpg);
+    }
+    30%, 40% {
+        background-image: url(../images/shop_3.jpg);
+    }
+    50%, 60% {
+        background-image: url(../images/shop_4.jpg);
+    }
+    70%, 80% {
+        background-image: url(../images/shop_5.jpg);
+    }
+    90%, 100% {
+        background-image: url(../images/shop.jpg);
+    }
+}
+
+.now_is_open {
+    animation: changeBackground 50s infinite;
+
+    background: url(../images/shop.jpg) no-repeat;
+    background-size: auto 300px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    border: white 8px solid;
+    color: #333333;
+    font-family: "Raleway Black Italic", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    padding-left: 134px;
+    padding-top: 116px;
+    padding-bottom: 60px;
+}
+
+/*Right*/
+
+.content_right {
+    width: 870px;
+    float: right;
+    margin-top: -20px;
+}
+
+.content_right_header {
+    line-height: 78px;
+    color: #fff;
+    font-family: "Roboto Black Italic", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #FFC72C, #E45826);
+    padding-left: 25px;
+    margin-bottom: 30px;
+}
+
+.content_right_product::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.product_unit {
+    display: block;
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: #f8f8f8;
+    float: left;
+    width: 270px;
+    height: 320px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    transition: transform 0.5s;
+}
+
+.product_unit:hover {
+    transform: scale(1.1);
+}
+
+.product_unit:nth-child(3n) {
+    margin-right: 0;
+}
+
+.product_unit_new::before {
+    background: url(../images/new.png) no-repeat;
+}
+
+.product_unit_hot::before {
+    background: url(../images/hot.png) no-repeat;
+}
+
+.product_unit_new::before, .product_unit_hot::before {
+    width: 46px;
+    height: 46px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.product_unit_name {
+    float: left;
+    width: 150px;
+    color: #333333;
+    font-family: "Roboto Black Italic", sans-serif;
+    font-size: 14px;
+    max-height: 2.4em;
+    overflow: hidden;
+}
+
+.product_unit_kolvo {
+    float: left;
+    width: 150px;
+    color: #333333;
+    font-family: "Roboto Black Italic", sans-serif;
+    font-size: 14px;
+    max-height: 2.4em;
+    overflow: hidden;
+}
+
+.product_unit_price_wrap {
+    float: right;
+    font-family: "Roboto Black Italic", sans-serif;
+    text-align: right;
+}
+
+.product_unit_price_actual {
+    color: #333333;
+    font-size: 18px;
+}
+
+.product_unit_price_old {
+    color: #e24602;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+/*Out*/
+
+.brends_main {
+    height: 80px;
+    background-image: linear-gradient(90deg, #FFC72C, #E45826);
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+/*Feed*/
+
+.feed_wrap {
+    height: 150px;
+    background-color: #eaeaea;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.feed_item {
+    font-family: "Roboto Black Italic", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.feed_item i {
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+
+.feed_item span {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.feed_item a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.feed_item a:hover {
+    color: #E45826;
+    transition: 0.3s;
+}
+
+/*Footer*/
+
+.footer_copyrights {
+    min-height: 50px;
+    flex-shrink: 0;
+    background-color: #333333;
+    color: #dad9d9;
+    line-height: 47px;
+}
+
+.footer_copyrights_text {
+    float: left;
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 12px;
+}
+
+.footer_copyrights_social {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    width: 178px;
+    padding-right: 20px;
+}
+
+.footer_copyrights_social a {
+    text-decoration: none;
+}
+
+.footer_copyrights_social i {
+    color: #dad9d9;
+}
